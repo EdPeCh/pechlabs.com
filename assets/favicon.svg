@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- PECH Labs monogram on brand background, square for favicons -->
+  <rect width="512" height="512" rx="96" fill="#0e0e0e"/>
+  <g transform="translate(256 256) scale(1.18) translate(-260 -255)">
+    <rect x="110" y="90" width="120" height="330" rx="44" fill="#ff6a1a"/>
+    <rect x="270" y="90" width="140" height="140" rx="44" fill="#ff6a1a"/>
+    <path transform="translate(680 0) scale(-1 1)" fill="#ffa256" d="M 294 250 H 306 A 24 24 0 0 1 330 274 V 344 A 16 16 0 0 0 346 360 H 386 A 24 24 0 0 1 410 384 V 396 A 24 24 0 0 1 386 420 H 294 A 24 24 0 0 1 270 396 V 274 A 24 24 0 0 1 294 250 Z"/>
+  </g>
+</svg>

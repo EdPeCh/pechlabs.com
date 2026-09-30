@@ -3,78 +3,124 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PECH Labs — AIgents-as-a-Service for Growing Businesses</title>
-<meta name="description" content="AI workers that run your routine operations — lead response, follow-up, admin, support, insights — for a flat monthly fee. Get your time back. Grow your business while your system grows smarter.">
+<title>PECH Labs — AI-First Agency for Bay Area Small Businesses</title>
+<meta name="description" content="PECH Labs is an AI-first digital agency for Bay Area small and medium businesses — medical & dental practices, service contractors and private schools. AI workers run your routine operations for a flat monthly fee.">
 <link rel="canonical" href="https://pechlabs.com/">
+<meta name="theme-color" content="#0e0e0e">
+<meta name="color-scheme" content="dark">
+<!-- Icons -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pechlabs.com/">
-<meta property="og:title" content="PECH Labs — AIgents-as-a-Service">
-<meta property="og:description" content="AI workers that run your routine operations 24/7 — no new hire, no 6-month software project.">
 <meta property="og:site_name" content="PECH Labs">
+<meta property="og:title" content="PECH Labs — AI-First Agency for Bay Area Small Businesses">
+<meta property="og:description" content="AI workers that run your routine operations 24/7 for a flat monthly fee — no new hire, no six-month software project.">
+<meta property="og:image" content="https://pechlabs.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PECH Labs — AI-first agency for Bay Area small and medium businesses">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_US">
+<!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PECH Labs — AI-First Agency for Bay Area Small Businesses">
+<meta name="twitter:description" content="AI workers that run your routine operations 24/7 for a flat monthly fee — no new hire, no six-month software project.">
+<meta name="twitter:image" content="https://pechlabs.com/assets/og-image.png">
+<meta name="twitter:image:alt" content="PECH Labs — AI-first agency for Bay Area small and medium businesses">
 <!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ProfessionalService",
   "name": "PECH Labs",
-  "url": "https://pechlabs.com",
+  "url": "https://pechlabs.com/",
+  "logo": "https://pechlabs.com/assets/logo.svg",
+  "image": "https://pechlabs.com/assets/og-image.png",
   "email": "hello@pechlabs.com",
-  "description": "AIgents-as-a-Service (AaaS) for growing businesses. AI workers that operate routine business functions, surfaced via daily briefs to the owner.",
-  "areaServed": "US"
+  "description": "AI-first digital agency for small and medium businesses in the San Francisco Bay Area. AI workers (AIgents) that operate routine business functions, surfaced via a daily brief to the owner.",
+  "areaServed": {"@type": "Place", "name": "San Francisco Bay Area, CA, US"},
+  "knowsLanguage": ["en", "es"],
+  "parentOrganization": {"@type": "Organization", "name": "PECH Group LLC"}
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --head:'Montserrat', system-ui, sans-serif;     /* headlines + body (D-019-07 working stack) */
-    --mono:'IBM Plex Mono', ui-monospace, monospace; /* kickers / labels / numbers */
-    /* Brand B palette (canonical, Day 22) */
+    --head:'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif; /* headlines + body */
+    --mono:'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace; /* kickers / labels / numbers */
+    /* Brand palette (canonical). Contrast on --bg: accent 6.7:1, muted 9.3:1, gray 13:1 */
     --bg:#0e0e0e; --surface:#1a1a1a; --ink:#f5f3ee;
     --accent:#ff6a1a; --accent-2:#ffa256;
-    --gray:#d9d4cc; --muted:#b8b4ac; --hair:#2a2a28;
-    /* v2 vertical-rhythm scale */
+    --gray:#d9d4cc; --muted:#b8b4ac; --hair:#2a2a28; --line:#5a5852;
+    /* vertical-rhythm scale */
     --sect-pad:130px; --grid-gap:30px; --card-pad:34px 30px;
+    --tap:44px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:var(--head);line-height:1.7;font-weight:300}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--bg);color:var(--ink);font-family:var(--head);line-height:1.7;font-weight:400;overflow-wrap:break-word}
+  img,svg{max-width:100%;height:auto}
   .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
   a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  :focus-visible{outline:3px solid var(--accent-2);outline-offset:3px;border-radius:4px}
+  [id]{scroll-margin-top:84px}
+
+  .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--accent);color:var(--bg);font-family:var(--mono);font-size:13px;padding:12px 16px;border-radius:6px;font-weight:500}
+  .skip:focus{top:12px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+  /* [TODO: Ed] markers — visible on purpose so nothing ships unnoticed */
+  .todo{font-family:var(--mono);font-size:.85em;color:var(--bg);background:var(--accent-2);padding:1px 6px;border-radius:3px}
 
   /* ── Nav ── */
-  nav{position:sticky;top:0;z-index:10;background:rgba(14,14,14,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1120px;margin:0 auto}
-  .brand{display:inline-flex;align-items:center;gap:10px;line-height:1}
-  .brand-img{height:22px;width:auto;display:block}
-  .logo{font-family:var(--mono);font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-  .logo b{color:var(--ink);font-weight:500}
-  .nav-links{display:flex;align-items:center;gap:26px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-  .nav-links a{color:var(--gray)}
-  .nav-links a:hover{color:var(--accent)}
-  .nav-cta{background:var(--accent);color:var(--bg)!important;padding:8px 14px;border-radius:5px;font-weight:500}
-  @media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+  .site-head{position:sticky;top:0;z-index:10;background:rgba(14,14,14,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 28px;max-width:1120px;margin:0 auto}
+  .brand{display:inline-flex;align-items:center;gap:10px;line-height:1;min-height:var(--tap);min-width:var(--tap);color:var(--ink)}
+  .brand:hover{text-decoration:none}
+  .brand-img{height:24px;width:22px;display:block}
+  .logo{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);font-weight:500;white-space:nowrap}
+  .nav-links{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  .nav-links a{color:var(--gray);display:inline-flex;align-items:center;min-height:var(--tap);padding:0 10px;border-radius:5px}
+  .nav-links a:hover{color:var(--accent);text-decoration:none}
+  .nav-links .nav-cta{background:var(--accent);color:var(--bg);padding:0 14px;font-weight:500;margin-left:6px;white-space:nowrap}
+  .nav-links .nav-cta:hover{background:var(--accent-2);color:var(--bg)}
+  .lang{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-left:6px}
+  .lang button{font:inherit;font-family:var(--mono);font-size:11px;letter-spacing:.1em;min-width:var(--tap);min-height:var(--tap);background:transparent;color:var(--gray);border:0;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:500}
+  .lang button:hover{color:var(--accent)}
+  .lang button[aria-pressed="true"]:hover{color:var(--bg)}
+  @media(max-width:900px){.nav-links a.nl{display:none}}
+  @media(max-width:420px){
+    .nav-in{padding:8px 16px;gap:6px}
+    .logo{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap} /* logo mark only; name stays for screen readers */
+    .nav-links .nav-cta{padding:0 10px;margin-left:4px}
+  }
 
-  /* ── Hero (v2: two-column, counterweight brief card) ── */
-  .hero{padding:120px 0 110px}
+  /* ── Hero ── */
+  .hero{padding-block:120px 110px}
   .hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:64px;align-items:center}
   .kick{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-  h1{font-weight:800;font-size:clamp(36px,5.2vw,58px);line-height:1.07;letter-spacing:-.02em;margin:18px 0 24px;max-width:18ch}
+  h1{font-weight:700;font-size:clamp(34px,5.2vw,58px);line-height:1.07;letter-spacing:-.02em;margin:18px 0 24px;max-width:18ch}
   h1 .o{color:var(--accent)}
-  .sub{font-size:19px;color:var(--gray);max-width:52ch;font-weight:300}
+  .sub{font-size:19px;color:var(--gray);max-width:54ch}
   .hero-ctas{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
-  .btn{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:14px 24px;border-radius:6px;font-weight:500}
+  .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:var(--tap);font-family:var(--mono);font-size:12px;line-height:1.4;letter-spacing:.1em;text-transform:uppercase;padding:13px 24px;border-radius:6px;font-weight:500}
+  .btn:hover{text-decoration:none}
   .btn-solid{background:var(--accent);color:var(--bg)}
   .btn-solid:hover{background:var(--accent-2)}
-  .btn-ghost{border:1px solid var(--hair);color:var(--ink)}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
   .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
 
-  /* simulated daily brief — pure HTML/CSS, no external assets */
+  /* simulated daily brief — pure HTML/CSS, illustrative only */
   .brief{background:var(--surface);border:1px solid var(--hair);border-radius:14px;font-family:var(--mono);font-size:13px;color:var(--gray);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45)}
-  .brief-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--hair);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .brief-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 20px;border-bottom:1px solid var(--hair);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
   .brief-bar .live{display:inline-flex;align-items:center;gap:7px;color:var(--accent)}
   .brief-bar .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,106,26,.15)}
   .brief-rows{padding:10px 20px 6px}
@@ -85,12 +131,13 @@
   .brief-row .v b{color:var(--ink);font-weight:500}
   .brief-foot{padding:13px 20px 16px;border-top:1px solid var(--hair);font-size:11.5px}
   .brief-foot .flag{color:var(--accent)}
+  .brief-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:12px;letter-spacing:.04em}
 
   .rule{height:1px;background:var(--hair);margin:0}
 
-  section{padding:var(--sect-pad) 0}
+  section{padding-block:var(--sect-pad)}
   h2{font-weight:700;font-size:clamp(26px,4vw,38px);line-height:1.18;letter-spacing:-.01em;margin:16px 0 20px}
-  .sect-sub{font-size:16px;color:var(--gray);max-width:60ch;margin-bottom:8px}
+  .sect-sub{font-size:16px;color:var(--gray);max-width:62ch;margin-bottom:8px}
 
   /* ── How ── */
   .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap);margin-top:60px}
@@ -98,37 +145,49 @@
   .how{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:var(--card-pad)}
   .how .n{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.1em}
   .how h3{font-weight:600;font-size:18px;margin:12px 0 10px}
-  .how p{font-size:14.5px;color:var(--gray)}
+  .how p{font-size:15px;color:var(--gray)}
+
+  /* ── Verticals ── */
+  .verts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap);margin-top:60px}
+  @media(max-width:920px){.verts{grid-template-columns:1fr}}
+  .vert{border:1px solid var(--hair);border-radius:12px;padding:var(--card-pad);display:flex;flex-direction:column}
+  .vert .tag{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+  .vert h3{font-weight:600;font-size:20px;margin:12px 0 10px;line-height:1.3}
+  .vert p{font-size:15px;color:var(--gray)}
+  .vert ul{list-style:none;margin:18px 0 0}
+  .vert li{font-size:14.5px;color:var(--gray);padding:9px 0 9px 24px;position:relative;border-top:1px solid var(--hair)}
+  .vert li::before{content:"→";position:absolute;left:0;color:var(--accent);font-family:var(--mono);font-size:13px}
+  .vert .note{font-size:13px;color:var(--muted);margin-top:16px}
 
   /* ── AIgents ── */
   .agents{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--grid-gap);margin-top:60px}
   @media(max-width:820px){.agents{grid-template-columns:1fr}}
   .agent{border:1px solid var(--hair);border-radius:12px;padding:var(--card-pad);position:relative}
   .agent:hover{border-color:var(--accent)}
-  .agent .num{font-family:var(--mono);font-weight:300;font-size:30px;color:var(--accent);line-height:1}
+  .agent .num{font-family:var(--mono);font-size:30px;color:var(--accent);line-height:1}
   .agent h3{font-weight:600;font-size:19px;margin:14px 0 10px}
-  .agent .pain{font-size:14px;color:var(--muted);margin-bottom:12px}
-  .agent p{font-size:14.5px;color:var(--gray)}
+  .agent .pain{font-size:14.5px;color:var(--muted);margin-bottom:12px}
+  .agent p{font-size:15px;color:var(--gray)}
 
-  /* ── Funnel ladder (v2: $0 → $67 → $990/mo) ── */
-  .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:60px;counter-reset:step}
+  /* ── Funnel ladder ── */
+  .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:60px}
   .step{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:var(--card-pad);position:relative;display:flex;flex-direction:column}
   .step .stage{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
   .step .lprice{font-family:var(--mono);font-weight:500;font-size:30px;margin:14px 0 2px;color:var(--ink)}
-  .step .lper{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+  .step .lper{font-family:var(--mono);font-size:12px;color:var(--muted)}
   .step h3{font-weight:600;font-size:17px;margin:16px 0 8px}
-  .step p{font-size:14px;color:var(--gray);flex:1}
+  .step p{font-size:14.5px;color:var(--gray);flex:1}
   .step .step-cta{margin-top:22px}
   .step.hot{border-color:var(--accent)}
   .step.hot .stage{color:var(--accent)}
-  /* connectors: → on desktop, ↓ when stacked */
   .step:not(:last-child)::after{content:"→";position:absolute;top:50%;right:-32px;transform:translateY(-50%);font-family:var(--mono);font-size:20px;color:var(--accent)}
   @media(max-width:920px){
     .ladder{grid-template-columns:1fr;gap:40px}
     .step:not(:last-child)::after{content:"↓";top:auto;right:auto;bottom:-32px;left:50%;transform:translateX(-50%)}
   }
+  .soon-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.04em}
 
-  /* ── Pricing tiers ── */
+  /* ── Pricing tiers (self-contained: see PRICING:START / PRICING:END) ── */
   .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap);margin-top:60px}
   @media(max-width:920px){.tiers{grid-template-columns:1fr}}
   .tier{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:38px 32px;display:flex;flex-direction:column}
@@ -137,277 +196,337 @@
   .tier .price{font-family:var(--mono);font-weight:500;font-size:38px;margin:16px 0 2px}
   .tier .per{font-family:var(--mono);font-size:12px;color:var(--muted)}
   .tier ul{list-style:none;margin:24px 0 30px;flex:1}
-  .tier li{font-size:14.5px;color:var(--gray);padding:10px 0 10px 24px;position:relative;border-bottom:1px solid var(--hair)}
+  .tier li{font-size:15px;color:var(--gray);padding:10px 0 10px 24px;position:relative;border-bottom:1px solid var(--hair)}
   .tier li:last-child{border-bottom:0}
   .tier li::before{content:"→";position:absolute;left:0;color:var(--accent);font-family:var(--mono);font-size:13px}
-
-  /* ── Disabled / coming-soon affordances (Day 24: visible, inert) ── */
-  .btn-disabled{background:var(--surface);color:var(--muted);border:1px dashed var(--hair);cursor:not-allowed}
-  .btn-disabled:hover{background:var(--surface);color:var(--muted);border-color:var(--hair)}
-  .soon-tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--hair);border-radius:4px;padding:3px 8px;margin-left:10px;vertical-align:middle}
-  .soon-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.04em}
-  .contact-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:22px}
-  .contact-soon{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--hair);border-radius:6px;padding:13px 22px;cursor:not-allowed}
-  .contact-soon .dot-off{width:7px;height:7px;border-radius:50%;background:var(--hair)}
+  .tiers-note{font-size:13px;color:var(--muted);margin-top:24px}
 
   /* ── Cliente Cero ── */
   .cero{background:var(--surface);border:1px solid var(--hair);border-radius:14px;padding:56px 52px}
-  .cero p{font-size:16.5px;color:var(--gray);max-width:64ch;margin-top:14px}
+  .cero p{font-size:16.5px;color:var(--gray);max-width:66ch;margin-top:14px}
   .cero b{color:var(--accent);font-weight:600}
-  @media(max-width:600px){.cero{padding:38px 26px}}
+  @media(max-width:600px){.cero{padding:38px 22px}}
 
-  /* ── CTA final ── */
-  .final{text-align:center;padding:140px 0}
+  /* ── Contact / final CTA ── */
+  .final{text-align:center;padding-block:140px}
   .final h2{max-width:24ch;margin-left:auto;margin-right:auto}
-  .final p{color:var(--gray);max-width:50ch;margin:16px auto 36px}
+  .final p{color:var(--gray);max-width:52ch;margin:16px auto 36px}
+  .final .hero-ctas{justify-content:center;margin-top:0}
+  .contact-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+  .contact-soon{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:6px;padding:12px 22px}
+  .contact-soon .dot-off{width:7px;height:7px;border-radius:50%;background:var(--line)}
+  .final .mail{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:26px}
+  .final .mail a{display:inline-flex;align-items:center;min-height:var(--tap)}
 
   footer{border-top:1px solid var(--hair);padding:48px 0 56px}
-  .foot-in{display:flex;justify-content:space-between;align-items:flex-start;gap:28px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted)}
+  .foot-in{display:flex;justify-content:space-between;align-items:flex-start;gap:28px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
   .foot-in b{color:var(--ink);font-weight:500}
-  .foot-in a{color:var(--muted)}
+  .foot-in a{color:var(--gray);display:inline-flex;align-items:center;min-height:var(--tap)}
   .foot-in a:hover{color:var(--accent)}
-  .foot-brand{display:flex;flex-direction:column;gap:12px}
-  .foot-brand .brand-img{height:20px}
-  .socials{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
-  .socials a[aria-disabled="true"]{color:var(--muted);opacity:.55;cursor:not-allowed;border:1px dashed var(--hair);border-radius:4px;padding:5px 10px;letter-spacing:.1em;text-transform:uppercase}
-  .socials a[aria-disabled="true"]:hover{color:var(--muted)}
-  .socials .s-soon{font-size:9px;color:var(--muted);margin-left:6px;opacity:.8}
+  .foot-brand{display:flex;flex-direction:column;gap:10px}
+  .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .socials span{color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:5px 10px;letter-spacing:.1em;text-transform:uppercase;font-size:11px}
+  .s-soon{font-size:10px;color:var(--muted);margin-left:6px}
 
   /* ── Responsive: hero & rhythm ── */
   @media(max-width:1024px){
     :root{--sect-pad:110px}
-    .hero{padding:96px 0 90px}
+    .hero{padding-block:96px 90px}
     .hero-grid{gap:48px;grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
   }
   @media(max-width:920px){
     .hero-grid{grid-template-columns:1fr;gap:56px}
-    .brief{max-width:480px}
+    .brief-wrap{max-width:480px}
   }
   @media(max-width:600px){
-    :root{--sect-pad:88px;--grid-gap:24px;--card-pad:28px 24px}
-    .hero{padding:72px 0 72px}
+    :root{--sect-pad:80px;--grid-gap:24px;--card-pad:28px 22px}
+    .wrap{padding:0 16px}
+    .hero{padding-block:64px 72px}
     .sub{font-size:17px}
     .brief{font-size:12px}
     .brief-row{flex-direction:column;gap:2px}
     .brief-row .v{text-align:left}
-    .final{padding:100px 0}
+    .hero-ctas .btn{width:100%}
+    .tier{padding:32px 22px}
+    .final{padding-block:96px}
   }
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="nav-in">
-    <!-- LOGO_V3: swap pending -->
-    <a class="brand" href="#" aria-label="PECH Labs">
-      <img class="brand-img" src="assets/logo.svg" alt="PECH Labs"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
-      <span class="logo"><b>PECH&nbsp;Labs</b></span>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="site-head">
+  <nav class="nav-in" aria-label="Primary" data-i18n-attr="aria-label:nav.label">
+    <a class="brand" href="#main">
+      <img class="brand-img" src="assets/logo.svg" alt="" width="22" height="24">
+      <span class="logo">PECH&nbsp;Labs</span>
     </a>
     <div class="nav-links">
-      <a href="#aigents">AIgents</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#cliente-cero">Cliente Cero</a>
-      <a href="#guide">Free Guide</a>
-      <a class="nav-cta" href="https://calendly.com/hello-pechlabs">Book a call</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero wrap">
-  <div class="hero-grid">
-    <div>
-      <div class="kick">AIgents-as-a-Service</div>
-      <h1>Get your time back. Grow your business while your system grows <span class="o">smarter</span>.</h1>
-      <p class="sub">PECH Labs deploys AI workers — AIgents — that run your routine operations 24/7 for a flat monthly fee. No new hire. No six-month software project. You get one daily brief and your evenings back.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-solid" href="https://calendly.com/hello-pechlabs">Book your free operations teardown →</a>
-        <a class="btn btn-ghost" href="#guide">Get the free guide</a>
+      <a class="nl" href="#verticals" data-i18n="nav.verticals">Who we serve</a>
+      <a class="nl" href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a class="nl" href="#cliente-cero">Cliente Cero</a>
+      <a class="nl" href="#contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+        <button type="button" data-lang="en" aria-pressed="true" lang="en"><span aria-hidden="true">EN</span><span class="sr-only">English</span></button>
+        <button type="button" data-lang="es" aria-pressed="false" lang="es"><span aria-hidden="true">ES</span><span class="sr-only">Español</span></button>
       </div>
+      <a class="nav-cta" href="https://calendly.com/hello-pechlabs" data-i18n="nav.cta">Book a call</a>
     </div>
-    <!-- counterweight: simulated owner's daily brief (decorative, palette-only) -->
-    <div class="brief" aria-hidden="true">
-      <div class="brief-bar">
-        <span>daily_brief — 07:00</span>
-        <span class="live"><span class="dot"></span>aigents live</span>
-      </div>
-      <div class="brief-rows">
-        <div class="brief-row"><span class="k">Leads</span><span class="v"><b>14</b> answered in &lt;60s · <b>3</b> booked</span></div>
-        <div class="brief-row"><span class="k">Follow-up</span><span class="v"><b>27</b> touches sent · <b>2</b> warm replies</span></div>
-        <div class="brief-row"><span class="k">Admin</span><span class="v"><b>41</b> records synced · 0 errors</span></div>
-        <div class="brief-row"><span class="k">Support</span><span class="v"><b>17</b> resolved · <b>1</b> escalated</span></div>
-      </div>
-      <div class="brief-foot"><span class="flag">→ needs you:</span> approve quote #114 · 2 min</div>
-    </div>
-  </div>
+  </nav>
 </header>
 
+<main id="main" tabindex="-1">
+
+<section class="hero wrap" aria-labelledby="hero-h">
+  <div class="hero-grid">
+    <div>
+      <p class="kick" data-i18n="hero.kick">AI-first agency · Bay Area SMBs</p>
+      <h1 id="hero-h" data-i18n="hero.h1">Get your time back. Grow your business while your system grows <span class="o">smarter</span>.</h1>
+      <p class="sub" data-i18n="hero.sub">PECH Labs is an AI-first digital agency for small and medium businesses in the San Francisco Bay Area. We deploy AI workers — AIgents — that run your routine operations 24/7 for a flat monthly fee. No new hire. No six-month software project. You get one daily brief and your evenings back.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="https://calendly.com/hello-pechlabs" data-i18n="hero.cta1">Book your free operations teardown →</a>
+        <a class="btn btn-ghost" href="#verticals" data-i18n="hero.cta2">See who we build for</a>
+      </div>
+    </div>
+    <!-- counterweight: simulated owner's daily brief — illustrative, NOT real client data -->
+    <div class="brief-wrap">
+      <div class="brief" aria-hidden="true">
+        <div class="brief-bar">
+          <span>daily_brief — 07:00</span>
+          <span class="live"><span class="dot"></span>aigents live</span>
+        </div>
+        <div class="brief-rows">
+          <div class="brief-row"><span class="k">Leads</span><span class="v"><b>14</b> answered in &lt;60s · <b>3</b> booked</span></div>
+          <div class="brief-row"><span class="k">Follow-up</span><span class="v"><b>27</b> touches sent · <b>2</b> warm replies</span></div>
+          <div class="brief-row"><span class="k">Admin</span><span class="v"><b>41</b> records synced · 0 errors</span></div>
+          <div class="brief-row"><span class="k">Support</span><span class="v"><b>17</b> resolved · <b>1</b> escalated</span></div>
+        </div>
+        <div class="brief-foot"><span class="flag">→ needs you:</span> approve quote #114 · 2 min</div>
+      </div>
+      <p class="brief-note" data-i18n="hero.briefnote">Illustrative example of a daily brief — not real client data.</p>
+    </div>
+  </div>
+</section>
+
 <div class="rule"></div>
 
-<section class="wrap" id="how">
-  <div class="kick">How it works</div>
-  <h2>Not another app to learn. A worker that shows up done.</h2>
-  <p class="sect-sub">An AIgent is set up, supervised, and improved by us — you never touch a dashboard you didn't ask for.</p>
+<section class="wrap" id="how" aria-labelledby="how-h">
+  <p class="kick" data-i18n="how.kick">How it works</p>
+  <h2 id="how-h" data-i18n="how.h2">Not another app to learn. A worker that shows up done.</h2>
+  <p class="sect-sub" data-i18n="how.sub">An AIgent is set up, supervised, and improved by us — you never touch a dashboard you didn't ask for.</p>
   <div class="how-grid">
-    <div class="how"><div class="n">01</div><h3>We find the leak</h3><p>A free 15-minute operations teardown. We identify which routine operation is quietly costing you the most — leads, follow-up, admin, support, or visibility.</p></div>
-    <div class="how"><div class="n">02</div><h3>We deploy the AIgent</h3><p>Your AI worker goes live on the tools you already use. Set up by us, tuned to your voice and your rules, supervised in production.</p></div>
-    <div class="how"><div class="n">03</div><h3>You get the brief</h3><p>One plain-language daily brief: what your AIgent handled, what needs your eyes, how the numbers moved. You decide; it operates.</p></div>
+    <div class="how"><div class="n">01</div><h3 data-i18n="how.1.h">We find the leak</h3><p data-i18n="how.1.p">A free 15-minute operations teardown. We identify which routine operation is quietly costing you the most — leads, follow-up, admin, support, or visibility.</p></div>
+    <div class="how"><div class="n">02</div><h3 data-i18n="how.2.h">We deploy the AIgent</h3><p data-i18n="how.2.p">Your AI worker goes live on the tools you already use. Set up by us, tuned to your voice and your rules, supervised in production.</p></div>
+    <div class="how"><div class="n">03</div><h3 data-i18n="how.3.h">You get the brief</h3><p data-i18n="how.3.p">One plain-language daily brief: what your AIgent handled, what needs your eyes, how the numbers moved. You decide; it operates.</p></div>
   </div>
 </section>
 
 <div class="rule"></div>
 
-<section class="wrap" id="aigents">
-  <div class="kick">The AIgents</div>
-  <h2>Five operations quietly killing growing businesses. Five AI workers that fix them.</h2>
+<section class="wrap" id="verticals" aria-labelledby="verts-h">
+  <p class="kick" data-i18n="verts.kick">Who we build for</p>
+  <h2 id="verts-h" data-i18n="verts.h2">Three kinds of Bay Area businesses. One problem: too much routine, not enough hours.</h2>
+  <p class="sect-sub" data-i18n="verts.sub">We focus on three verticals so every AIgent starts from how your kind of business actually runs — not from a generic template.</p>
+  <div class="verts">
+    <article class="vert">
+      <p class="tag" data-i18n="verts.1.tag">Healthcare</p>
+      <h3 data-i18n="verts.1.h">Medical &amp; dental practices</h3>
+      <p data-i18n="verts.1.p">Your front desk juggles phones, reminders and insurance questions while patients wait. AIgents take the repetitive layer off their plate.</p>
+      <ul>
+        <li data-i18n="verts.1.l1">New-patient inquiries answered and routed in seconds</li>
+        <li data-i18n="verts.1.l2">Appointment reminders, confirmations and recall follow-up</li>
+        <li data-i18n="verts.1.l3">Common front-desk questions handled around the clock</li>
+      </ul>
+      <p class="note" data-i18n="verts.1.note">Patient privacy: <span class="todo">[TODO: Ed] confirm HIPAA / BAA posture before publishing any statement here</span></p>
+    </article>
+    <article class="vert">
+      <p class="tag" data-i18n="verts.2.tag">Field services</p>
+      <h3 data-i18n="verts.2.h">Service contractors</h3>
+      <p data-i18n="verts.2.p">When you're on a job site, the next job is ringing unanswered. AIgents make sure every lead gets a fast, professional response.</p>
+      <ul>
+        <li data-i18n="verts.2.l1">Instant response to web, phone and text leads — any hour</li>
+        <li data-i18n="verts.2.l2">Estimate follow-up that doesn't stop after one try</li>
+        <li data-i18n="verts.2.l3">Scheduling and job details synced across your tools</li>
+      </ul>
+    </article>
+    <article class="vert">
+      <p class="tag" data-i18n="verts.3.tag">Education</p>
+      <h3 data-i18n="verts.3.h">Private schools</h3>
+      <p data-i18n="verts.3.p">Admissions and parent communication run on tight seasonal peaks. AIgents keep every family informed without burying your staff.</p>
+      <ul>
+        <li data-i18n="verts.3.l1">Admissions inquiries answered and tours booked</li>
+        <li data-i18n="verts.3.l2">Application and enrollment follow-up sequences</li>
+        <li data-i18n="verts.3.l3">Routine parent questions answered in English and Spanish</li>
+      </ul>
+      <p class="note" data-i18n="verts.3.note">Student data: <span class="todo">[TODO: Ed] confirm FERPA / student-data policy before publishing any statement here</span></p>
+    </article>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="wrap" id="aigents" aria-labelledby="agents-h">
+  <p class="kick" data-i18n="agents.kick">The AIgents</p>
+  <h2 id="agents-h" data-i18n="agents.h2">Five operations quietly killing growing businesses. Five AI workers that fix them.</h2>
   <div class="agents">
-    <div class="agent"><div class="num">01</div><h3>Lead-Response AIgent</h3><div class="pain">The lead you already paid for — going cold.</div><p>Replies to every inbound lead in seconds, any hour, qualifies with a few smart questions, and books the meeting or flags the hot ones to you.</p></div>
-    <div class="agent"><div class="num">02</div><h3>Follow-Up AIgent</h3><div class="pain">The follow-up that stops after one try.</div><p>Runs a persistent, polite, multi-touch cadence across email and text, stops the instant someone replies or books, and hands warm responses to you.</p></div>
-    <div class="agent"><div class="num">03</div><h3>Operations AIgent</h3><div class="pain">The swivel-chair tax — copy-paste admin.</div><p>Moves and reconciles data between your systems automatically, so nobody on your payroll is a human copy-paste bridge.</p></div>
-    <div class="agent"><div class="num">04</div><h3>Support AIgent</h3><div class="pain">The inbox that owns you.</div><p>Answers the repetitive questions instantly, 24/7, in your voice, and escalates the genuinely tricky ones to a human with full context attached.</p></div>
-    <div class="agent"><div class="num">05</div><h3>Insights AIgent</h3><div class="pain">Flying blind.</div><p>Pulls from the tools you already use and gives you a plain-language snapshot on demand — what's up, what's down, what needs attention.</p></div>
+    <div class="agent"><div class="num">01</div><h3 data-i18n="agents.1.h">Lead-Response AIgent</h3><p class="pain" data-i18n="agents.1.pain">The lead you already paid for — going cold.</p><p data-i18n="agents.1.p">Replies to every inbound lead in seconds, any hour, qualifies with a few smart questions, and books the meeting or flags the hot ones to you.</p></div>
+    <div class="agent"><div class="num">02</div><h3 data-i18n="agents.2.h">Follow-Up AIgent</h3><p class="pain" data-i18n="agents.2.pain">The follow-up that stops after one try.</p><p data-i18n="agents.2.p">Runs a persistent, polite, multi-touch cadence across email and text, stops the instant someone replies or books, and hands warm responses to you.</p></div>
+    <div class="agent"><div class="num">03</div><h3 data-i18n="agents.3.h">Operations AIgent</h3><p class="pain" data-i18n="agents.3.pain">The swivel-chair tax — copy-paste admin.</p><p data-i18n="agents.3.p">Moves and reconciles data between your systems automatically, so nobody on your payroll is a human copy-paste bridge.</p></div>
+    <div class="agent"><div class="num">04</div><h3 data-i18n="agents.4.h">Support AIgent</h3><p class="pain" data-i18n="agents.4.pain">The inbox that owns you.</p><p data-i18n="agents.4.p">Answers the repetitive questions instantly, 24/7, in your voice, and escalates the genuinely tricky ones to a human with full context attached.</p></div>
+    <div class="agent"><div class="num">05</div><h3 data-i18n="agents.5.h">Insights AIgent</h3><p class="pain" data-i18n="agents.5.pain">Flying blind.</p><p data-i18n="agents.5.p">Pulls from the tools you already use and gives you a plain-language snapshot on demand — what's up, what's down, what needs attention.</p></div>
   </div>
 </section>
 
 <div class="rule"></div>
 
-<!-- ── Entry ladder: funnel order before monthly packages (Chairman, Day 23/24) ── -->
-<section class="wrap" id="start">
-  <div class="kick">Start here</div>
-  <h2>Three steps in. Each one earns the next.</h2>
-  <p class="sect-sub">Begin free, see exactly where your business leaks, then put one AIgent on the worst of it.</p>
+<!-- ── Entry ladder: funnel order before monthly packages ── -->
+<section class="wrap" id="start" aria-labelledby="start-h">
+  <p class="kick" data-i18n="start.kick">Start here</p>
+  <h2 id="start-h" data-i18n="start.h2">Three steps in. Each one earns the next.</h2>
+  <p class="sect-sub" data-i18n="start.sub">Begin free, see exactly where your business leaks, then put one AIgent on the worst of it.</p>
 
   <div class="ladder">
     <div class="step">
-      <div class="stage">Step 1 · Diagnose</div>
+      <p class="stage" data-i18n="start.1.stage">Step 1 · Diagnose</p>
       <div class="lprice">$0</div>
-      <div class="lper">free download</div>
-      <h3>The Free Guide</h3>
-      <p>"5 Operations Quietly Killing Your Business Right Now" — read it as a checklist.</p>
-      <div class="step-cta"><a class="btn btn-ghost" href="#guide">Download</a></div>
+      <div class="lper" data-i18n="start.1.per">free download</div>
+      <h3 data-i18n="start.1.h">The Free Guide</h3>
+      <p data-i18n="start.1.p">"5 Operations Quietly Killing Your Business Right Now" — read it as a checklist.</p>
+      <div class="step-cta"><a class="btn btn-ghost" href="#guide" data-i18n="start.1.cta">Download</a></div>
     </div>
     <div class="step">
-      <div class="stage">Step 2 · Plan</div>
+      <p class="stage" data-i18n="start.2.stage">Step 2 · Plan</p>
       <div class="lprice">$67</div>
-      <div class="lper">one-time</div>
-      <h3>The AIgent Playbook</h3>
-      <p>Which AIgent to deploy first — the same framework we use with paying clients.</p>
+      <div class="lper" data-i18n="start.2.per">one-time</div>
+      <h3 data-i18n="start.2.h">The AIgent Playbook</h3>
+      <p data-i18n="start.2.p">Which AIgent to deploy first — the same framework we use with paying clients.</p>
       <div class="step-cta">
         <!-- STRIPE_PAYMENT_LINK: live Jun 12 2026 (TO-ORION-054-A: link ACTIVO) -->
-        <a class="btn" href="https://buy.stripe.com/aFa5kwcXzgW6bkb7Da87K00" target="_blank" rel="noopener">Get the Playbook — $67</a>
-        <div class="soon-note">secure checkout via Stripe · 30-day refund guarantee</div>
+        <a class="btn btn-ghost" href="https://buy.stripe.com/aFa5kwcXzgW6bkb7Da87K00" target="_blank" rel="noopener" data-i18n="start.2.cta">Get the Playbook — $67</a>
+        <div class="soon-note" data-i18n="start.2.note">secure checkout via Stripe · 30-day refund guarantee</div>
       </div>
     </div>
     <div class="step hot">
-      <div class="stage">Step 3 · Deploy</div>
-      <div class="lprice">$990</div>
-      <div class="lper">per month · Foundation</div>
-      <h3>Your first AIgent</h3>
-      <p>One AI worker live on your worst leak — set up, supervised, and improved by us, with a daily brief to you.</p>
-      <div class="step-cta"><a class="btn btn-solid" href="#foundation">See Foundation ↓</a></div>
+      <p class="stage" data-i18n="start.3.stage">Step 3 · Deploy</p>
+      <div class="lprice">$997</div>
+      <div class="lper" data-i18n="start.3.per">per month · Foundation</div>
+      <h3 data-i18n="start.3.h">Your first AIgent</h3>
+      <p data-i18n="start.3.p">One AI worker live on your worst leak — set up, supervised, and improved by us, with a daily brief to you.</p>
+      <div class="step-cta"><a class="btn btn-solid" href="#foundation" data-i18n="start.3.cta">See Foundation ↓</a></div>
     </div>
   </div>
 </section>
 
 <div class="rule"></div>
 
-<section class="wrap" id="pricing">
-  <div class="kick">Pricing</div>
-  <h2>Flat monthly fee. No payroll line. No surprise invoices.</h2>
-  <p class="sect-sub">Every engagement starts with a free teardown, so you only ever pay for an AIgent aimed at a leak we've already found.</p>
+<!-- PRICING:START — self-contained block. To hide prices: delete from here to PRICING:END,
+     the "Pricing" nav link, and the $997 step in #start. -->
+<section class="wrap" id="pricing" aria-labelledby="pricing-h">
+  <p class="kick" data-i18n="pricing.kick">Plans</p>
+  <h2 id="pricing-h" data-i18n="pricing.h2">Flat monthly fee. No payroll line. No surprise invoices.</h2>
+  <p class="sect-sub" data-i18n="pricing.sub">Every engagement starts with a free teardown, so you only ever pay for an AIgent aimed at a leak we've already found.</p>
 
   <div class="tiers">
     <div class="tier" id="foundation">
-      <div class="name">Foundation</div>
-      <div class="price">$990</div><div class="per">per month</div>
+      <h3 class="name">Foundation</h3>
+      <div class="price">$997</div><div class="per" data-i18n="pricing.per">USD per month</div>
       <ul>
-        <li>1 AIgent running one core operation</li>
-        <li>Set up, supervised &amp; improved by us</li>
-        <li>Daily brief to the owner</li>
-        <li>Email support</li>
+        <li data-i18n="pricing.1.l1">1 AIgent running one core operation</li>
+        <li data-i18n="pricing.1.l2">Set up, supervised &amp; improved by us</li>
+        <li data-i18n="pricing.1.l3">Daily brief to the owner</li>
+        <li data-i18n="pricing.1.l4">Email support</li>
       </ul>
-      <a class="btn btn-ghost" href="https://calendly.com/hello-pechlabs">Start with a teardown</a>
+      <a class="btn btn-ghost" href="https://calendly.com/hello-pechlabs" data-i18n="pricing.cta">Start with a teardown</a>
     </div>
     <div class="tier feat">
-      <div class="name">Growth</div>
-      <div class="price">$2,490</div><div class="per">per month</div>
+      <h3 class="name">Growth</h3>
+      <div class="price">$2,497</div><div class="per" data-i18n="pricing.per">USD per month</div>
       <ul>
-        <li>Up to 3 AIgents working together</li>
-        <li>Cross-operation handoffs (lead → follow-up → booked)</li>
-        <li>Daily brief + weekly performance review</li>
-        <li>Priority support</li>
+        <li data-i18n="pricing.2.l1">Up to 3 AIgents working together</li>
+        <li data-i18n="pricing.2.l2">Cross-operation handoffs (lead → follow-up → booked)</li>
+        <li data-i18n="pricing.2.l3">Daily brief + weekly performance review</li>
+        <li data-i18n="pricing.2.l4">Priority support</li>
       </ul>
-      <a class="btn btn-solid" href="https://calendly.com/hello-pechlabs">Start with a teardown</a>
+      <a class="btn btn-solid" href="https://calendly.com/hello-pechlabs" data-i18n="pricing.cta">Start with a teardown</a>
     </div>
     <div class="tier">
-      <div class="name">Command</div>
-      <div class="price">$4,990</div><div class="per">per month</div>
+      <h3 class="name">Command</h3>
+      <div class="price">$4,997</div><div class="per" data-i18n="pricing.per">USD per month</div>
       <ul>
-        <li>Full AIgent fleet across your operations</li>
-        <li>Custom integrations to your stack</li>
-        <li>Dedicated operations channel</li>
-        <li>Quarterly strategy session</li>
+        <li data-i18n="pricing.3.l1">Full AIgent fleet across your operations</li>
+        <li data-i18n="pricing.3.l2">Custom integrations to your stack</li>
+        <li data-i18n="pricing.3.l3">Dedicated operations channel</li>
+        <li data-i18n="pricing.3.l4">Quarterly strategy session</li>
       </ul>
-      <a class="btn btn-ghost" href="https://calendly.com/hello-pechlabs">Start with a teardown</a>
+      <a class="btn btn-ghost" href="https://calendly.com/hello-pechlabs" data-i18n="pricing.cta">Start with a teardown</a>
     </div>
   </div>
 </section>
+<!-- PRICING:END -->
 
 <div class="rule"></div>
 
-<section class="wrap" id="cliente-cero">
+<section class="wrap" id="cliente-cero" aria-labelledby="cero-h">
   <div class="cero">
-    <div class="kick">Cliente Cero</div>
-    <h2>We don't sell what we don't run.</h2>
-    <p>PECH Labs itself runs on the same AIgents we deploy for clients — our outreach, our reporting, our monitoring, our operations. We call it <b>Cliente Cero</b>: client zero is us. Every system you buy has already survived production in our own business.</p>
+    <p class="kick">Cliente Cero</p>
+    <h2 id="cero-h" data-i18n="cero.h2">We don't sell what we don't run.</h2>
+    <p data-i18n="cero.p1">PECH Labs is part of <b>PECH Group LLC</b> — and PECH Group is our first client. We call it <b>Cliente Cero</b>: client zero. The AIgents we deploy for you run our own group's outreach, reporting, monitoring and operations first.</p>
+    <p data-i18n="cero.p2">That means every system you buy has already survived production in a real business — ours — before it touches yours. If it isn't good enough for us, we don't sell it.</p>
+    <p data-i18n="cero.p3"><span class="todo">[TODO: Ed] Add one verifiable Cliente Cero result (what runs, since when, real before/after figure) — or remove this line.</span></p>
   </div>
 </section>
 
 <div class="rule"></div>
 
-<section class="wrap" id="guide">
-  <div class="kick">Free guide</div>
-  <h2>5 Operations Quietly Killing Your Business Right Now</h2>
-  <p class="sect-sub">What each leak looks like, what it's actually costing you, and how a single AIgent takes it off your plate. Includes the 5-point self-score.</p>
+<section class="wrap" id="guide" aria-labelledby="guide-h">
+  <p class="kick" data-i18n="guide.kick">Free guide</p>
+  <h2 id="guide-h" data-i18n="guide.h2">5 Operations Quietly Killing Your Business Right Now</h2>
+  <p class="sect-sub" data-i18n="guide.sub">What each leak looks like, what it's actually costing you, and how a single AIgent takes it off your plate. Includes the 5-point self-score.</p>
   <div class="hero-ctas">
-    <a class="btn btn-solid" href="assets/PECH_Labs_5-Operations.pdf" download>Download the PDF →</a>
+    <a class="btn btn-solid" href="assets/PECH_Labs_5-Operations.pdf" download data-i18n="guide.cta">Download the PDF (English) →</a>
   </div>
 </section>
 
 <div class="rule"></div>
 
-<section class="final wrap">
-  <div class="kick">Next step</div>
-  <h2>Pick the leak costing you the most. We'll show you how an AIgent closes it.</h2>
-  <p>Free, no pitch deck, 15 minutes. You leave with a diagnosis either way.</p>
-  <a class="btn btn-solid" href="https://calendly.com/hello-pechlabs">Book your free operations teardown →</a>
+<section class="final wrap" id="contact" aria-labelledby="contact-h">
+  <p class="kick" data-i18n="contact.kick">Next step</p>
+  <h2 id="contact-h" data-i18n="contact.h2">Pick the leak costing you the most. We'll show you how an AIgent closes it.</h2>
+  <p data-i18n="contact.p">Free, no pitch deck, 15 minutes. You leave with a diagnosis either way. Prefer email? Write to us — in English or Spanish.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-solid" href="https://calendly.com/hello-pechlabs" data-i18n="contact.cta1">Book your free operations teardown →</a>
+    <a class="btn btn-ghost" href="mailto:edgar.pereda@pechgroup.com?subject=PECH%20Labs%20%E2%80%94%20Operations%20teardown" data-i18n="contact.cta2">Email us</a>
+  </div>
+  <p class="mail"><a href="mailto:edgar.pereda@pechgroup.com">edgar.pereda@pechgroup.com</a></p>
   <div class="contact-row">
-    <!-- WHATSAPP: placeholder only — no real connection (Chairman, Day 24) -->
-    <span class="contact-soon" aria-disabled="true" title="WhatsApp — coming soon"><span class="dot-off"></span>WhatsApp — coming soon</span>
+    <!-- WHATSAPP: placeholder only — no real connection -->
+    <span class="contact-soon"><span class="dot-off"></span><span data-i18n="contact.wa">WhatsApp — coming soon</span></span>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap foot-in">
     <div class="foot-brand">
-      <!-- LOGO_V3: swap pending -->
-      <a class="brand" href="#" aria-label="PECH Labs">
-        <img class="brand-img" src="assets/logo.svg" alt="PECH Labs"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
-        <span class="logo"><b>PECH&nbsp;Labs</b></span>
+      <a class="brand" href="#main">
+        <img class="brand-img" src="assets/logo.svg" alt="" width="22" height="24" loading="lazy">
+        <span class="logo">PECH&nbsp;Labs</span>
       </a>
-      <div><b>PECH Labs</b> · AIgents-as-a-Service for growing businesses</div>
-      <!-- SOCIALS: placeholders only — no real links yet (Chairman, Day 24) -->
-      <div class="socials">
-        <a href="#" aria-disabled="true" onclick="return false">LinkedIn<span class="s-soon">soon</span></a>
-        <a href="#" aria-disabled="true" onclick="return false">Instagram<span class="s-soon">soon</span></a>
-        <a href="#" aria-disabled="true" onclick="return false">X<span class="s-soon">soon</span></a>
+      <div data-i18n="foot.tag"><b>PECH Labs</b> · AI-first agency for Bay Area small &amp; medium businesses · a PECH Group LLC company</div>
+      <!-- SOCIALS: placeholders only — no real links yet -->
+      <div class="socials" aria-label="Social profiles (coming soon)" role="group" data-i18n-attr="aria-label:foot.socials">
+        <span>LinkedIn<span class="s-soon" data-i18n="soon">soon</span></span>
+        <span>Instagram<span class="s-soon" data-i18n="soon">soon</span></span>
+        <span>X<span class="s-soon" data-i18n="soon">soon</span></span>
       </div>
     </div>
     <!-- PRIVACY_LINK: restore <a href="privacy.html">Privacy</a> when attorney clears the draft -->
-    <div><a href="mailto:hello@pechlabs.com">hello@pechlabs.com</a> · <span title="Pending attorney review" style="opacity:.55">Privacy <span class="s-soon">soon</span></span> · © 2026 PECH Labs</div>
+    <div><a href="mailto:hello@pechlabs.com">hello@pechlabs.com</a> · <span><span data-i18n="foot.privacy">Privacy</span> <span class="s-soon" data-i18n="soon">soon</span></span> · © 2026 PECH Labs</div>
   </div>
 </footer>
 
+<script src="assets/i18n.js" defer></script>
 </body>
 </html>
